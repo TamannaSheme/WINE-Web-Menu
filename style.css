@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 
 
@@ -407,10 +406,6 @@ width: auto;
     color: yellow;
 }
 
-.footer-button{
-
-}
-
 .google-review{
 background-color: green;
 border: none;
@@ -435,8 +430,4 @@ margin-right: 50px;
 height: 50px;
 padding-right: 10px;
 padding-left: 10px;
-}
-.scroll-icon{
-
->>>>>>> 35e5d950b1ea418cec7a5ae29c6b7e79d1cbf70f
 }
