@@ -156,10 +156,8 @@ flex-wrap: wrap;
 width: auto;
 }
 .menu-image img{
-    height: 100px;
-    border-radius: 20px;
-    background-color: rgb(63, 1, 1);
-    padding: 10px;
+    height: 230px;
+    
 }
 
 .icon a i{
