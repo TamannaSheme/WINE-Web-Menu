@@ -38,8 +38,12 @@ margin-right: 250px;
 
 .header-text-left{
 color: red;
+font-style: italic;
 }
-
+.header-text-right{
+    color: red;
+    font-style: italic;
+}
 .header-button{
     border: 1px solid rgb(210, 41, 41);;
     padding: 10px 30px;
@@ -86,7 +90,7 @@ background-color: white;
 display: flex;
 flex-wrap: wrap;
 margin-left: 100px;
-margin-top: 30px;
+margin-top: 20px;
 margin-bottom: 30px;
 background-image:url('Images/background-body.jpg');
 }
