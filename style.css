@@ -102,7 +102,7 @@ background-image:url('Images/background-body.jpg');
     color: black;
 }
 
-.slected-link{
+.list-menu .selected-link{
     background-color: #c40202;
     color: white;
     padding-top: 30px;
