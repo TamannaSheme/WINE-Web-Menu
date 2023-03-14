@@ -119,7 +119,7 @@ background-image:url('Images/background-body.jpg');
     color: black;
 }
 
-.list-menu .selected-link{
+.list-menu:hover{
     background-color: #c40202;
     color: white;
     padding-top: 30px;

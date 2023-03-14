@@ -19,6 +19,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
    <header class="header"> 
@@ -64,73 +67,561 @@
        </div>
    </nav>
 
-   <aside>
-    <div class="all-menu">
-        <div class="menus">
-            <ul >
-                <li class="list-menu"><a href="#">Wine & Drinks</a></li><hr class="menus-hr">
-            <li class="list-menu"><a href="#" class="selected-link">Signature Drinks</a></li><hr class="menus-hr">
-            <li class="list-menu"><a href="#">Red Wines</a></li><hr class="menus-hr">
-                <li class="list-menu"><a href="#">White Wines</a></li><hr class="menus-hr">
-                <li class="list-menu"><a href="#">Sparkling and Rose Wines</a></li><hr class="menus-hr">
-            <li class="list-menu"><a href="#">Sangria</a></li><hr class="menus-hr">
-                <li class="list-menu"><a href="#">Mojitos</a></li><hr class="menus-hr">
-                <li class="list-menu"><a href="#">Home-made Desserts</a></li><hr class="menus-hr">
-                <li class="list-menu"><a href="#">Desserts Drinks</a></li><hr class="menus-hr">
-                <li class="list-menu"><a href="#">Los Tragos </a></li><hr class="menus-hr">
-                <li class="list-menu"><a href="#">Los Clasicos</a></li><hr class="menus-hr">
-            </ul>
+<aside>
+    <div class="d-flex align-items-start all-menu">
+
+        <div class="nav flex-column nav-pills me-3 menus" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <!-- 111 -->
+            <button class="nav-link active list-menu" id="v-pills-wineDrinks-tab" data-bs-toggle="pill"
+                data-bs-target="#v-wineDrinks" type="button" role="tab" aria-controls="v-pills-wineDrinks"
+                aria-selected="true">Wine & Drinks</button>
+            <hr class="menus-hr">
+            <!-- 22222 -->
+            <button class="nav-link list-menu" id="v-pills-signatureDrinks-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-signatureDrinks" type="button" role="tab"
+                aria-controls="v-pills-signatureDrinks" aria-selected="false">Signature Drinks</button>
+            <hr class="menus-hr">
+            <!-- 3333               -->
+            <button class="nav-link list-menu" id="v-pills-redWines-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-redWines" type="button" role="tab" aria-controls="v-pills-redWines"
+                aria-selected="false">Red Wines</button>
+            <hr class="menus-hr">
+            <!-- 44444 -->
+            <button class="nav-link list-menu" id="v-pills-whiteWines-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-whiteWines" type="button" role="tab" aria-controls="v-pills-whiteWines"
+                aria-selected="false">White Wines</button>
+            <hr class="menus-hr">
+            <!-- 55555 -->
+            <button class="nav-link list-menu" id="v-pills-sparklingRoseWines-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-sparklingRoseWines" type="button" role="tab"
+                aria-controls="v-pills-sparklingRoseWines" aria-selected="false">Sparkling and Rose Wines</button>
+            <hr class="menus-hr">
+            <!-- 666666 -->
+            <button class="nav-link list-menu" id="v-pills-sangria-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-sangria" type="button" role="tab" aria-controls="v-pills-sangria"
+                aria-selected="false">Sangria</button>
+            <hr class="menus-hr">
+            <!-- 777777 -->
+            <button class="nav-link list-menu" id="v-pills-mojitos-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-mojitos" type="button" role="tab" aria-controls="v-pills-mojitos"
+                aria-selected="false">Mojitos</button>
+            <hr class="menus-hr">
+            <!-- 88888888888 -->
+            <button class="nav-link list-menu" id="v-pills-HomemadeDesserts-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-HomemadeDesserts" type="button" role="tab"
+                aria-controls="v-pills-HomemadeDesserts" aria-selected="false">Home-made Desserts</button>
+            <hr class="menus-hr">
+            <!-- 9999999999999 -->
+            <button class="nav-link list-menu" id="v-pills-dessertsDrinks-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-dessertsDrinks" type="button" role="tab" aria-controls="v-pills-dessertsDrinks"
+                aria-selected="false">Desserts Drinks</button>
+            <hr class="menus-hr">
+            <!-- 100000000 -->
+            <button class="nav-link list-menu" id="v-pills-losTragos-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-losTragos" type="button" role="tab" aria-controls="v-pills-losTragos"
+                aria-selected="false">Los Tragos</button>
+            <hr class="menus-hr">
+
+            <!-- <button class="nav-link list-menu" id="v-pills-losClasicos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-losClasicos"
+                    type="button" role="tab" aria-controls="v-pills-losClasicos" aria-selected="false">Los Clasicos</button>
+                <hr class="menus-hr">
+                <button class="nav-link list-menu" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                    type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Signature Drinks</button>
+                <hr class="menus-hr">        -->
         </div>
-       
- 
-        <div class="signature-menus">
-            <h1 class="signature-drinks">SIGNATURE DRINKS</h1>
-            <h4 class="winner-code">"Winner of the 2019 Newark Cocktail Competition"</h4>
-            <h3 class="signature-header">PACOLUCA ALBARINO (<span>16</span>)</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla est omnis nostrum nihil quam. Cumque quam
-                quisquam expedita hic labore?</p>
-    
-            <h3 class="signature-header">IBIZA TEA (<span>15</span>)</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla est omnis nostrum nihil quam. Cumque quam
-                quisquam
-                expedita hic labore?</p>
-    
-            <h3 class="signature-header">VALENCIANA (<span>16</span>)</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla est omnis nostrum nihil quam. Cumque quam
-                quisquam
-                expedita hic labore?</p>
-    
-            <h3 class="signature-header">TONICA-BRON (<span>15</span>)</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla est omnis nostrum nihil quam. Cumque quam
-                quisquam
-                expedita hic labore?</p>
-    
-            <h3 class="signature-header">PANTERA ROSA (<span>16</span>)</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla est omnis nostrum nihil quam. Cumque quam
-                quisquam
-                expedita hic labore?</p>
-    
-            <h3 class="signature-header">PALOMA BRRACHA(<span>16</span>)</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla est omnis nostrum nihil quam. Cumque quam
-                quisquam
-                expedita hic labore?</p>
-    
-            <h3 class="signature-header">MANHATTAN(<span>16</span>)</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla est omnis nostrum nihil quam. Cumque quam
-                quisquam
-                expedita hic labore?</p>
-    
-            <div class="food-code">
-                <p>Cask Aged Cocktails aged for over a month in oak barrels, best served over ice</p>
-    
+
+        <div class="tab-content signature-menus" id="v-pills-tabContent">
+            <!-- 1111 -->
+            <div class="tab-pane fade show active" id="v-pills-wineDrinks" role="tabpanel"
+                aria-labelledby="v-pills-wineDrinks-tab">
+                <h1>Wine Drinks</h1>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
             </div>
-    
+
+            <!-- 2222                   -->
+            <div class="tab-pane fade" id="v-pills-signatureDrinks" role="tabpanel"
+                aria-labelledby="v-pills-signatureDrinks-tab">
+
+                <h1> Signature Drinks</h1>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+
+            </div>
+            <!-- 3333 -->
+            <div class="tab-pane fade" id="v-pills-redWines" role="tabpanel" aria-labelledby="v-pills-redWines-tab">
+
+                <h1> Red Wines</h1>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+
+            </div>
+
+            <!-- 444444444 -->
+
+            <div class="tab-pane fade" id="v-pills-whiteWines" role="tabpanel" aria-labelledby="v-pills-whiteWines-tab">
+
+                <h1> White Wines</h1>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+
+            </div>
+
+            <!-- 5555555555 -->
+            <div class="tab-pane fade" id="v-pills-sparklingRoseWines" role="tabpanel"
+                aria-labelledby="v-pills-sparklingRoseWines-tab">
+
+                <h1> Sparkling Rose Wines</h1>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+
+            </div>
+
+            <!-- 666666666666 -->
+            <div class="tab-pane fade" id="v-pills-sangria" role="tabpanel" aria-labelledby="v-pills-sangria-tab">
+
+                <h1> Sangria</h1>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+
+            </div>
+
+            <!-- 777777 -->
+
+            <div class="tab-pane fade" id="v-pills-mojitos" role="tabpanel" aria-labelledby="v-pills-mojitos-tab">
+
+                <h1> Mojitos</h1>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+
+            </div>
+
+            <!-- 88888 -->
+            <div class="tab-pane fade" id="v-pills-HomemadeDesserts" role="tabpanel"
+                aria-labelledby="v-pills-HomemadeDesserts-tab">
+
+                <h1> Home Made Desserts</h1>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+
+            </div>
+
+            <!-- 9999999 -->
+            <div class="tab-pane fade" id="v-pills-dessertsDrinks" role="tabpanel"
+                aria-labelledby="v-pills-dessertsDrinks-tab">
+
+                <h1> Dessert Drinks</h1>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+
+            </div>
+
+            <!-- 1000000000 -->
+
+            <div class="tab-pane fade" id="v-pills-losTragos" role="tabpanel" aria-labelledby="v-pills-losTragos-tab">
+
+                <h1> Los Tragos Drinks</h1>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+                <h3 class="signature-header"> PACO LUCA ALBARINO (GLASS 10, BOTTLE 35) (OUR OWN FAMILY
+                    WINE)(<span>15</span>)</h3>
+                <p>We bring you this wine that embodies authenticity from the region with the most renowned grapes of
+                    Galicia, as
+                    Rias
+                    Baixas. Aromas of white peaches, lime peels, green herbs, notes of citrus and crisp mineral
+                    nuances.This wine is
+                    sure to
+                    hit every side of your palate with pleasure.</p>
+
+
+            </div>
+
+
+            <!-- done -->
         </div>
+        <!-- image added    -->
         <div class="menu-image">
             <img src="Images/wine.png" alt="">
         </div>
-        </div>
-    </aside>
+
+    </div>
+    <!-- 333 -->
+
+    </div>
+    </div>
+</aside>
    <footer class="footer">
 
     <div class="footer-left">
@@ -159,8 +650,8 @@
 
    </footer>
 
-<script src="https://kit.fontawesome.com/f672a78144.js" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/f672a78144.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-</script>
 </body>
 </html>
